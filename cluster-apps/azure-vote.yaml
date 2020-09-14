@@ -26,8 +26,11 @@ kind: Service
 metadata:
   name: azure-vote-back
 spec:
+  type: NodePort
   ports:
   - port: 6379
+    nodePort: 6379
+    name: http
   selector:
     app: azure-vote-back
 ---

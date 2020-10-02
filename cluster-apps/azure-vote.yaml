@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: azure-vote-back
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: azure-vote-back
@@ -36,7 +36,7 @@ kind: Deployment
 metadata:
   name: azure-vote-front
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: azure-vote-front
